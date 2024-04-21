@@ -1,0 +1,35 @@
+{
+  "name": "my-chrome-extension",
+  "version": "0.1",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "deps": "npm install",
+    "stage": "mkdir dist || echo Dist already exists.",
+    "bundle": "esbuild src/gmailJsLoader.js src/extension.js --outdir=dist/ --bundle --sourcemap --target=es6",
+    "devbuild": "cp ../gmail.js/src/gmail.js node_modules/gmail-js/src/ && npm run build",
+    "build": "npm run stage && npm run bundle",
+    "watch": "nodemon"
+  },
+  "author": "Jeffrey Hicks",
+  "license": "MIT",
+  "dependencies": {
+    "gmail-js": "^1.1.14",
+    "jquery": "^4.0.0-beta",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
+    "@babel/preset-react": "^7.24.1",
+    "esbuild": "^0.16.0",
+    "nodemon": "^3.1.0"
+  },
+  "nodemonConfig": {
+    "watch": ["src/"],
+    "ext": "js",
+    "ignore": ["dist/"],
+    "exec": "npm run build"
+  }
+}
