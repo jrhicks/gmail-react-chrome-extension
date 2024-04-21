@@ -4,8 +4,11 @@ This is bowlerplate repo for building React-based Chrome Extension for Gmail.
 
 ## React Based
 
+The boilerplate loads the React App into the Gmail page and supplies the gmail object which you can observe.
+
 ```jsx
 const App = (props) => {
+    const { gmail } = props;
     const [userOpened, setUserOpened] = useState(true); 
     const [fromAddress, setFromAddress] = useState(''); 
     
@@ -20,10 +23,7 @@ const App = (props) => {
 
     const panelStyle = {
         height: (userOpened) ? '50vh' : 'auto', 
-        ...
     }
-
-    ...
 
     return (
         <div id="sidePanel" style={panelStyle}>
