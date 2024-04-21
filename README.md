@@ -1,4 +1,4 @@
-## GMAIL Chrome Extension BoilerPlate
+## Gmail React Chrome Extension
 
 This is bowlerplate repo for building React-based Chrome Extension for Gmail.
 
