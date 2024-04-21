@@ -42,7 +42,7 @@ const App = (props) => {
 }
 ```
 
-![screenshot](./screen_shots/opened.png){: style="border: 2px solid black;"}
+![screenshot](./screen_shots/opened.png)
 
 ## For Gmail
 
