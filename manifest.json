@@ -1,11 +1,10 @@
 {
     "manifest_version": 3,
-    "name": "GmailJS Node Boilerplate Extension",
-    "short_name": "gmailjsnode",
+    "name": "Gmail React Chrome Extension",
+    "short_name": "gmail_react_chrome_extension",
     "version": "1.1",
-    "author": "Jostein Kjønigsen <jostein@kjonigsen.net>",
-
-    "description": "A minimal extension which demonstrates how to create a extension with Gmail.JS and NodeJS-based bundling.",
+    "author": "Jeffrey Hicks",
+    "description": "A minimal extension which demonstrates how to create a extension with Gmail.JS with React.  Based on the work of Jostein Kjønigsen <jostein@kjonigsen.net>",
 
     "content_scripts": [
         {

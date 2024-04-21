@@ -44,7 +44,7 @@ const App = (props) => {
 
 ![screenshot](./screen_shots/opened.png)
 
-## For Gmail
+## Interacting w/ Gmail
 
 Using [gmail.js](https://github.com/KartikTalwar/gmail.js/) it can observe gmail events.  For example:
 
@@ -59,12 +59,32 @@ Using [gmail.js](https://github.com/KartikTalwar/gmail.js/) it can observe gmail
 
 For educational purposes only.  See MIT License.
 
-## Usage
+## Development
 
 First get the code and build it:
 
 ````
+git clone https://github.com/jrhicks/gmail-react-chrome-extension.git
+cd gmail-react-chrome-extension
 npm install
-npm update
 npm run build
 ````
+
+Next, load the extension into Chrome:
+
+1. Open Chrome and navigate to `chrome://extensions/`
+2. Enable `Developer mode`
+3. Click `Load unpacked` and select the `gmail-react-chrome-extension` folder
+4. Open Gmail and you should see the extension load on bottom right side of the screen
+
+Making changes to the code:
+
+1. Make changes to the code
+2. Run `npm run build`
+3. You do not have to Refresh the extension in Chrome, but you do need to refresh your browser page.
+
+Alternatively
+
+1. Run `npm run watch`
+2. Make changes to the code
+3. Refresh your browser page
